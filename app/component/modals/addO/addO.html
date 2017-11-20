@@ -1,0 +1,47 @@
+<div class="modal-cont">
+    <div class="modal" id="add-o">
+        <div class="modal-top">
+            <div class="modal-title">
+                <span class="modal-title-text">maker</span>
+            </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div class="modal-body">
+            <div class="input-cont">
+                <label class="input-label" for="add-o-title-in">Title</label>
+                <br>
+                <input class="text-input" id="add-o-title-in"  type="text" ng-model="title"/>
+            </div>
+            <div class="modal-divider-lighter"></div>
+            <div class="input-cont">
+                <label class="input-label" for="add-o-story-in">Story</label>
+                <br>
+                <textarea class="textarea-input" id="add-o-story-in"  ng-model="story"></textarea>
+            </div>
+            <div class="modal-items-cont">
+                <div class="modal-item-add" ng-repeat="item in items track by $index">
+                    <div class="modal-item-input-cont">
+                        <label class="modal-item-input-label">Name</label>
+                        <input class="modal-item-text-input" type="text" name="itemName" ng-model="item.name"/>
+                    </div>
+                    <div class="modal-item-input-cont">
+                        <label class="modal-item-input-label">Description</label>
+                        <br>
+                        <textarea class="modal-item-textarea-input"  ng-model="item.desc"></textarea>
+                    </div>
+                    <div class="modal-item-input-cont">
+                        <label class="modal-item-input-label">Quantity</label>
+                        <input class="modal-item-text-input" ng-model="item.quantity"/>
+                    </div>
+                    <button class="modal-button" ng-click="deleteItem($index)">Delete</button>
+                </div>
+                <button class="modal-button" ng-click="addItem()">New Item</button>
+            </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div class="modal-button-cont">
+            <button class="modal-button">Cancel</button>
+            <button class="modal-button">Submit</button>
+        </div>
+    </div>
+</div>

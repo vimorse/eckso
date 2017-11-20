@@ -1,0 +1,24 @@
+.eckso{
+    font-size: 24px;
+}
+
+.eckso-cont{
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.o{
+    color: #4787cc;
+    cursor: pointer;
+}
+
+.x{
+    color: #232323;
+    cursor: pointer;
+}
+
+.world-row{
+    margin: 3px 0;
+}

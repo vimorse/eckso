@@ -1,0 +1,26 @@
+{
+  "name": "eckso",
+  "version": "1.0.0",
+  "description": "x o",
+  "scripts": {
+    "test": "test",
+    "go": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vimorse/eckso.git"
+  },
+  "author": "vimorse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vimorse/eckso/issues"
+  },
+  "homepage": "https://github.com/vimorse/eckso#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "express": "^4.16.2",
+    "http": "0.0.0",
+    "mongoose": "^4.13.4"
+  }
+}

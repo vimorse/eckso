@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eckso">
+<head>
+    <meta charset="UTF-8">
+    <title>eckso</title>
+
+    <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="../lib/core/world.js"></script>
+    <script type="text/javascript" src="../lib/core/x.js"></script>
+    <script type="text/javascript" src="../lib/core/o.js"></script>
+    <script type="text/javascript" src="../lib/core/item.js"></script>
+    <script type="text/javascript" src="../lib/core/player.js"></script>
+
+
+    <script type="text/javascript" src="app.js"></script>
+
+    <script type="text/javascript" src="./component/world/world.controller.js"></script>
+    <script type="text/javascript" src="./component/modals/addO/addO.controller.js"></script>
+
+    <script type="text/javascript" src="service/world.service.js"></script>
+
+    <link rel="stylesheet" href="./res/css/general.css"/>
+    <link rel="stylesheet" href="./res/css/modal.css"/>
+    <link rel="stylesheet" href="./component/world/world.css"/>
+
+</head>
+<body>
+    <ng-view></ng-view>
+</body>
+</html>

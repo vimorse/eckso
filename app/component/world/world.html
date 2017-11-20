@@ -1,0 +1,8 @@
+<div>
+    <div class="world-row" ng-repeat="row in grid">
+            <div class="eckso-cont" ng-repeat="eckso in row"><span ng-click="eckso.onClick()" class={{eckso.styleClass}}>{{eckso.displayAs}}</span></div>
+    </div>
+</div>
+
+<div class="backdrop" ng-show="showAddOModal" ng-click="showAddOModal = false"></div>
+<addo ng-if="showAddOModal"></addo>
